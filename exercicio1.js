@@ -1,2 +1,4 @@
-// Faça o exercício dos parágrafos aqui
-// Este arquivo ainda não está incluído no arquivo HTML
+function expande(id, btn){
+    document.getElementById(id).classList.toggle("expandido");
+    document.getElementById(btn).innerHTML == "+" ? document.getElementById(btn).innerHTML = "-" : document.getElementById(btn).innerHTML = "+";
+}

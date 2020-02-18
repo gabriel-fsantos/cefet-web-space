@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Space+Mono">
     <link rel="stylesheet" href="estilos.css">
     <link rel="shortcut icon" href="images/favicon.png">
+    <script src="exercicio1.js"></script>
+    <script src="exercicio2.js"></script>
   </head>
   <body>
     <header>
@@ -27,8 +29,8 @@
              dos parágrafos -->
         <h1>Sobre Aliens</h1>
         <h2>De onde eles vêm</h2>
-        <p>
-          <button class="botao-expandir-retrair" type="button">+</button>
+        <p id="p1">
+          <button onclick="expande('p1', 'btn1')" id="btn1" class="botao-expandir-retrair" type="button">+</button>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in
           dignissim augue. Nunc a erat ac nisl imperdiet dapibus sit amet
           in ipsum. Suspendisse scelerisque in dui in placerat. Praesent
@@ -42,8 +44,8 @@
           nostra, per inceptos himenaeos.
         </p>
         <h2>O que eles querem</h2>
-        <p>
-          <button class="botao-expandir-retrair" type="button">+</button>
+        <p id="p2">
+          <button onclick="expande('p2','btn2')" id="btn2" class="botao-expandir-retrair" type="button">+</button>
           Cras velit mauris, suscipit ac blandit sit amet, scelerisque eget
           sem. Aenean purus leo, tincidunt consectetur libero id, euismod
           ultrices diam. Nam erat purus, faucibus ut nisl in, facilisis
@@ -58,8 +60,8 @@
           mauris nulla, eget sagittis sem molestie nec.
         </p>
         <h2>Para onde eles vão</h2>
-        <p>
-          <button class="botao-expandir-retrair" type="button">+</button>
+        <p id="p3">
+          <button onclick="expande('p3','btn3')" id="btn3" class="botao-expandir-retrair" type="button">+</button>
           Vestibulum auctor orci lacus, sit amet pretium mauris viverra
           nec. Nullam eu maximus augue. Phasellus in metus sit amet sem dapibus
           iaculis ut at odio. Cras turpis dui, lacinia non posuere quis,
@@ -82,8 +84,8 @@
         </p>
         <div id="galeria">
           <img src="http://fegemo.github.io/cefet-web/images/philae-parts.jpg" id="slide">
-          <button id="anterior" class="controle">Anterior</button>
-          <button id="proximo" class="controle">Próximo</button>
+          <button id="anterior" onclick="anterior()" class="controle">Anterior</button>
+          <button id="proximo" onclick="proximo()" class="controle">Próximo</button>
         </div>
       </article>
     </main>
